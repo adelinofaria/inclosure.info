@@ -1,34 +1,25 @@
-inclosure.info
+#[api.inclosure.info](http://api.inclosure.info)
 ==============
 
-Password management service.
+###Password management service.
 
-Avaliable requests for API.
+##Avaliable requests for API.
 
 Requests
-/users
-  GET     --
-  POST    Register User
-  PUT     --
-  DELETE  --
-
-/users/1
-  GET     User Information
-  POST    --
-  PUT     Update user information
-  DELETE  Delete user
-
-/passwords
-  GET     Owned password list
-  POST    Save new password
-  PUT     --
-  DELETE  --
-
-/passwords/1
-  GET     Password info
-  POST    --
-  PUT     Update password
-  DELETE  Delete password
+```
+  ------------------------------------------------------------------------------------------------
+ |                   GET                  POST                PUT                DELETE           |
+ |------------------------------------------------------------------------------------------------|
+ | /users        |   --                   Register user       --                 --               |
+ |---------                                                                                       |
+ | /users/1      |   User information     --                  Update user        Delete user      |
+ |---------                                                                                       |
+ | /passwords    |   Owned password list  Save new password   --                 --               |
+ |---------                                                                                       |
+ | /passwords/1  |   Password info        --                  Update password    Delete password  |
+ |---------                                                                                       |
+  ------------------------------------------------------------------------------------------------
+```
 
 Minimum parameters for user creation 
 {"email":"email","password":"password"}
