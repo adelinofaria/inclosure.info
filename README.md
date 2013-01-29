@@ -8,25 +8,25 @@ Avaliable requests for API.
 Requests
 /users
   GET     --
-  POS     Register User
+  POST    Register User
   PUT     --
   DELETE  --
 
 /users/1
   GET     User Information
-  POS     --
+  POST    --
   PUT     Update user information
   DELETE  Delete user
 
 /passwords
   GET     Owned password list
-  POS     Save new password
+  POST    Save new password
   PUT     --
   DELETE  --
 
 /passwords/1
   GET     Password info
-  POS     --
+  POST    --
   PUT     Update password
   DELETE  Delete password
 
