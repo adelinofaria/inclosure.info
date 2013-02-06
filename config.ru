@@ -1,2 +1,5 @@
-require 'sinatra'
-require 'requests.rb'
+require './application'
+
+set :database, ENV['localhost'] || 'postgres://localhost/[inclosure.info]'
+
+run Sinatra::Application
